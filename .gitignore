@@ -4,6 +4,7 @@
 !docker-compose.yaml
 !uploads.ini
 !README.md
+!demo-content/
 
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories

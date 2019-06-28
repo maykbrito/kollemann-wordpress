@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<title>Bauhaus - Clean Architecture & Portfolio Wordpress Theme Documentation</title>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<!--[if lte IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+<body>
+	<div class="sideBarLeft">
+		<div class="sideBarLeftWrap">
+			<a href="" class="logo">
+				<img src="images/logo.png" alt="">
+			</a>
+			<p>Bauhaus - Clean Architecture & Portfolio Wordpress Theme</p>
+			<ul class="menu">
+                <li><a href="#templates">Install and templates of the theme</a></li>
+                <li><a href="#homepage">Home page</a></li>
+                <li><a href="#about">"About" page</a></li>
+                <li><a href="#simpleslider">Simple slider on home page and Home Slides CPT</a></li>
+                <li><a href="#services">Block with services on home page, "Services" template and Services CPT</a></li>
+                <li><a href="#testimonials">Block with testimonials on home page and Testiomonial CPT</a></li>
+                <li><a href="#prices">Price CPT</a></li>
+                <li><a href="#brands">Block with brands/logotypes on home page and Brand CPT</a></li>
+                <li><a href="#options">Theme Options</a></li>
+                <li><a href="#plugins">Required and recommended plugins</a></li>
+                <li><a href="#dummy">Demo content</a></li>
+                <li><a href="#faq">FAQ</a></li>
+			</ul>
+		</div>
+		<a href="http://highseastudio.com/" class="highseastudioLogo">
+			<img src="images/highseastudio-logo.png" alt="Highseastudio logo">
+		</a>
+		<p class="copyright">&copy; 2015 <a target="_blank" href="http://highseastudio.com/">Highsea studio</a>. <br> All rights reserved.</p>
+	</div>
+	<div class="contentRight">
+		<header id="header">
+			<h2>Hi! I’m <span>Bauhaus</span></h2>
+			<p>Clean Architecture & Portfolio Wordpress Theme</p>
+			<a class="demo" target="_blank" href="http://highseastudio.com/demo/bauhaus/">demo</a>
+		</header>
+		<section id="documenter_cover" class="two">
+			<h3>Bauhaus WP Theme</h3>
+			<ul class="custom">
+				<li>Created: 13/05/2015</li>
+				<li>Latest update: 25/08/2015</li>
+				<li>By: <a href="http://themeforest.net/user/HighSea/portfolio">HighSea</a></li>
+			</ul>
+		</section>
+		<section id="about-theme" class="two">
+			<h3>Thank You!</h3>
+			<p>Thank you for purchasing our product! If you have any questions or suggestions, please feel free to contact us via contact form on our <a href="http://themeforest.net/user/HighSea/portfolio">portfolio page</a>.</p>
+		</section>
+
+		<section id="templates" class="two">
+			<h3>Install and templates of the theme</h3>
+
+            <p>The theme has several templates that you may use for your needs. They are:</p>
+            <ul>
+                <li>Home page (file templ-home.php) - our nice and shiny home page</li>
+                <li>Blog (two templates: templ-blog-one.php and templ-blog-two.php) - to make a Blog</li>
+                <li>About page (templ-about.php)</li>
+                <li>Contact page (templ-contact.php)</li>
+                <li>Page to showcase services (templ-service.php)</li>
+                <li>Portfolio (three templates: templ-portfolio-one.php, templ-portfolio-two.php, templ-portfolio-three.php) - to showcase projects</li>
+            </ul>
+            <p>And some words about recommended sizes of the images. They are:</p>
+            <ul>
+                <li>equal or larger then 1366×768 for sliders for the slider on home page</li>
+                <li>equal or larger then 1366x550 for sections with 100% width</li>
+                <li>on home page: 684x684, 684x342 and 342x342 for images in the grid on the home page</li>
+                <li>100x20 is recommended size for logo</li>
+            </ul>
+		</section>
+
+		<section id="homepage" class="two">
+			<h3>Home page</h3>
+
+            <p>Make a home page like in our demo is pretty simple. First, create a static page and choose 'Home page' template for this page. Than
+            choose 'a static page' option for Front Page displays settings and choose your created static page:</p>
+            <img src="images/bauhaus-1.png" width="775" height="514" alt="">
+            <p>You are done!</p>
+
+            <p>Among sections for home page are: <a href="#simpleslider">simple slider</a>, two sections to show "about us" information (content can be added via
+            theme options page), unique grid with 6 items of custom content (content can be added via theme options page), <a href="#services">"Our Services" block</a>,
+            <a href="#testimonials">block with testimonials</a>, <a href="#brands">block with brands/logotypes</a>, <a href="contact">block with a map and contact information</a>.
+            All these blocks can be enabled/disabled via <a href="#options">theme options page</a> on "Home" page settings" tab.</p>
+
+		</section>
+
+        <section id="about" class="two">
+            <h3>"About" page</h3>
+
+            <h4>Overview</h4>
+            <p>First of all create a page and choose template 'About Page'. Featured image will be added to the page header in the background. You should also
+            add a title and subtitle (via metabox). Than add a title for "Our story" block and content for the left and the right columns (via metabox).</p>
+
+            <p>Also, you can enable "Meet Our Team" block (explained below), "Our Partners" block (explained below) and block with Instagram images (<strong>you must
+            activate 'Instagram Feed' plugin (free) to be able to use this block!</strong>)</p>
+
+            <h4>"Meet Our Team"</h4>
+
+            <p>The theme creates a new special user role called 'architector'. All users under this role will be shown in this block on 'About' page. So, first
+            of all choose 'architector' role for some users and add an avatar and fill in their profession on their profiles:</p>
+
+            <img src="images/bauhaus-6.png" width="628" height="449" alt="">
+
+            <p>Now enable this block. Also, you can add custom title for this block.</p>
+
+            <h4>"Our Partners"</h4>
+
+            <p>Special Brand CPT is used to give you a possibility to showcase your partners/brands that you work with.</p>
+
+            <img src="images/bauhaus-7.png" width="523" height="254" alt="">
+
+            <p>All these brands will be shown in this block. For more information about brands please read <a href="#brands">this section</a>.</p>
+
+        </section>
+
+        <section id="simpleslider" class="two">
+            <h3>Simple slider on home page and Home Slides CPT</h3>
+
+            <p>The theme has simple slider built-in. Slides of this slider are posts of Home Slides CPT.</p>
+
+            <img src="images/bauhaus-2.png" width="688" height="260" alt="">
+
+            <p>The number of slides which can be shown is unlimited. All published posts of Home Slides CPT will be shown in the slider. To hide a slide just
+            draft related post.</p>
+
+            <p>We recommend to use 'Intuitive Custom Post Order' plugin to reoder posts. Posts on the top will be shown first in the slider.</p>
+
+        </section>
+
+        <section id="services" class="two">
+            <h3>Block with services on home page, "Services" template and Services CPT</h3>
+
+            <p>The theme uses posts of Service CPT. This CPT is created to help you showcase, for instance, services of your studio.</p>
+
+            <img src="images/bauhaus-3.png" width="549" height="321" alt="">
+
+            <p>Each post of Services CPT has four options:</p>
+
+            <img src="images/bauhaus-4.png" width="854" height="677" alt="">
+
+            <p>So, you can display services on per post basis on the home page and/or on page with "Services" template and use different images in different
+            places.</p>
+
+            <p>Page with "Services" template is just a page with "Services Page" template chosen. This page displays prices (3 or 4) at the top of the page and
+            they look like this:</p>
+
+            <img src="images/bauhaus-5.png" width="795" height="606" alt="">
+
+            <p>Please, read more about <a href="#prices">prices and Price CPT here</a>. Also this page displays services at the bottom of the page.</p>
+
+            <p>We recommend to use 'Intuitive Custom Post Order' plugin to reoder posts.</p>
+
+        </section>
+
+        <section id="testimonials" class="two">
+            <h3>Block with testimonials on home page and Testiomonial CPT</h3>
+
+            <p>The theme uses posts of Testimonial CPT. This CPT is created to help you showcase, for instance, feedback from your partners or clients.</p>
+
+            <img src="images/bauhaus-10.png" width="1072" height="645" alt="">
+
+            <p>The information in metabox will be shown on the website and also will be used in th Order form:</p>
+
+            <img src="images/bauhaus-15.png" width="831" height="622" alt="">
+
+            <p>All published posts of Testiomonial CPT will be shown on the home page in the section with testimonials.</p>
+
+            <p>We recommend to use 'Intuitive Custom Post Order' plugin to reoder posts.</p>
+
+        </section>
+
+		<section id="prices" class="two">
+			<h3>Price CPT</h3>
+
+            <p>The theme uses posts of Price CPT. This CPT is created to help you showcase, for instance, what you can do and costs of these works.</p>
+
+            <img src="images/bauhaus-11.png" width="921" height="359" alt="">
+            <img src="images/bauhaus-12.png" width="592" height="494" alt="">
+
+            <p>This prices can be displayed on special <a href="#services">"Services" page</a>. Yo ucan display 3 or 4 prices at once.</p>
+
+            <img src="images/bauhaus-5.png" width="795" height="606" alt="">
+
+        </section>
+
+		<section id="brands" class="two">
+			<h3>Block with brands/logotypes on home page and Brand CPT</h3>
+
+            <p>The theme uses posts of Brand CPT. This CPT is created to help you showcase, for instance, your partners or clients.</p>
+
+            <img src="images/bauhaus-8.png" width="1072" height="533" alt="">
+
+            <p>There is one global option that is connected with posts of Brand CPT:</p>
+
+            <img src="images/bauhaus-9.png" width="742" height="184" alt="">
+
+            <p>This option works for both section with brands on home page and section with brands on "About" page and turns all your brand images into
+            black and white. We think, B&W logotypes look better :)</p>
+
+        </section>
+
+        <section id="options" class="two">
+
+            <h3>Theme Options</h3>
+
+            <h4>General settings tab</h4>
+
+            <p><strong>Header layout</strong>. You can swicth between Layout 1 (header with a white background) and Layout 2 (header with a transparent background).
+            <strong>Important: different header layouts option works ONLY for "Home" page template. On all other pages a header with a white background will be
+            shown!</strong>
+            This is how Layout 1 looks like:</p>
+            <img src="images/bauhaus-14.png" width="1087" height="207" alt="">
+            <p>And this is how Layout 2 looks like:</p>
+            <img src="images/bauhaus-13.png" width="1083" height="205" alt="">
+
+            <p><strong>Style of archive pages</strong>. Choose a style of archive pages (categories, tags)</p>
+            <p><strong>Enable/Disable displaying similar posts on single</strong>. This is a global option and it works for the whole website. Posts which are
+            similar by tags can be displayed below post content.</p>
+            <p><strong>Portfolio page</strong>. Select your Portfolio page. A link to this page will be added to the special icon on the slider on single project
+            page. This is a global option and it can be overriden on per project basis.</p>
+            <p><strong>Enable/Disable displaying all brands (logotypes) in black and white</strong>. This is a global option and it works for both block on
+            home page and block on "About" page</p>
+            <p><strong>Enable filter by types of projects</strong></p>
+            <p><strong>Enable filter by locations of projects</strong></p>
+            <p><strong>Enable filter by statuses of projects</strong></p>
+            <p><strong>Enable filter by years of projects</strong></p>
+            <p><strong>Text in the footer</strong>. Add your own text to the footer</p>
+
+            <h4>Logo settings tab</h4>
+
+            <p>You can upload three files. Each of them can be in different style. "Logo A" will be used if you choose Header Layout 1. It is also better if
+            "Logo B" will be with white (light in general) colour outlines and "Logo C" will be with black (dark in general) colour outlines.</p>
+
+            <h4>Fonts</h4>
+
+            <p>You can define custom Google fonts here. Please, use the first for regular text and the second for headings. Default are: Montserrat (700, regular)
+            and Open Sans (700, 300, regular)</p>
+
+            <h4>"Home" page settings</h4>
+
+            <p><strong>Enable/Disable simple slider</strong>.</p>
+            <p><strong>Enable/Disable "About Us" block #1</strong>.</p>
+            <p><strong>Enable/Disable "About Us" block #2</strong>.</p>
+            <p><strong>Show/hide the grid with custom content on home page</strong>. A unique grid with custom content on home page. Total are 6 items, but you
+            may also display first three items or second three items separately. Important: in order to show the first three items you have to add URIs for the
+            first three items. The same is for the second three items. It means that you can not just display first and fourth items, for instance.
+            Only by three items at once and only first three or second three or all six items. Also, the second and the sixth items haven't fields for text.</p>
+            <p><strong>Enable/Disable "Our Services" block</strong>.</p>
+            <p><strong>Enable/Disable block with testimonials</strong>.</p>
+            <p><strong>Enable/Disable block with brands</strong>.</p>
+            <p><strong>Enable/Disable block with a map and contact information</strong>.</p>
+
+            <h4>"Contact" page settings tab</h4>
+
+            <p>You can add Google Map coordinates for the map on "Contact" page and address, phone number etc. The theme has its own working contact form.
+            However you can also activate Contact Form 7 plugin and use forms provided by this plugin. In this case you just need to add the ID of the CF7 form.</p>
+
+            <h4>Social icons settings tab</h4>
+
+            <p>You can add links to your social profiles here.</p>
+
+        </section>
+
+        <section id="plugins" class="two">
+
+            <h3>Required and recommended plugins</h3>
+
+            <p>There is some required and some recommended plugins. <strong>All the required plugins are bundled with the theme</strong> and only required plugins
+            affect the basic functionality of the theme. Recommended plugins just add some additional functionality, they are not neccessary and some of them are not
+            bundled with the theme. You can buy them or download for free (it depends on the particular plugin). 'Recommended' means that we tested how they
+            work with the theme just to be sure that everything will be ok and we think that they can be useful in some particular situations.</p>
+
+            <p>Some of the required plugins are paid and bundled with the theme, like 'Uni User Avatar', so you can use them with ease.</p>
+
+        </section>
+
+        <section id="dummy" class="two">
+
+            <h3>Demo content</h3>
+
+            <p>You can find export file with demo content in the folder 'Demo content' within item's archive. First of all you have to activate 'Bauhaus' theme
+            ('Bauhaus Child' is a betetr option, actually),
+            then activate plugin 'Uni Custom Post Types and Taxonomies'. <strong>Otherwise, not
+            all the information (especially custom post types and custom taxonomies) will be imported!</strong>. Than go to 'Tools' -> 'Import' admin menu and choose
+            'WordPress' from the list. You will be asked to install 'WordPress Importer' plugin. Install it and activate. Now choose 'bauhaus.wordpress.2015-09-11.xml' file
+            from your computer and click 'Upload file and import'. Follow the instructions.</p>
+
+            <p>Now go to OptionTree -> Settings and paste the code from 'layout.txt' file and hit Import Layouts</p>
+
+            <img src="images/bauhaus-16.png" width="1038" height="384" alt="">
+
+            <p>Additionally you have to do a couple of things. First, assign menu in Appearance -> Menus and choose 'Home' page as front page of your website
+            under Settings -> Reading admin menu.</p>
+
+            <p>You are done!</p>
+
+            <p><strong>The demo content doesn't contain images. It contains only general structure and texts.</strong></p>
+
+        </section>
+
+        <section id="faq" class="two">
+
+            <h3>FAQ</h3>
+
+            <ul>
+
+                <li><strong>Q: Why links to 'Home slides' or 'Brands' (or other custom post types) have been disappeared from the admin menu?</strong> <br>A: More likely it
+                is because you have changed the name of the theme's folder. You have to keep it 'bauhaus' all the time! Another reason may be that you have created
+                a child theme but haven't added line "Template: bauhaus" in the style.css of your child theme. Than just add such line and the problem is gone.</li>
+
+                <li><strong>Q: How to change the favicon?</strong> <br>A: The theme uses 5 files with favicons for different resolutions/devices. They are: favicon.ico,
+                favicon-16×16.png, favicon-32×32.png, apple-touch-icon-144×144.png, apple-touch-icon-152×152.png So, just change them, but keep the same file names.</li>
+
+                <li><strong>Q: What is the proper way to customize your theme?</strong> <br>A: First, you should create a child theme. A sample of such child theme
+                already is in item's archive. You can use it for your needs. Second, make all changes ONLY through your child theme. It is not a good idea to make
+                changes in original theme's files because you won't be able to upgrade it. An additional information about managing a child theme
+                <a href="https://codex.wordpress.org/Child_Themes">can be found here</a>.</li>
+
+                <li><strong>Q: What is the proper way to upgrade the theme?</strong> <br>A: You have to completely replace all the old files. It is event better to
+                just delete an entire folder of your current Bauhaus parent theme, then upload the new folder with the theme. Also, we might make a decision to add
+                some functions to 'functions.php' file of the precreated child theme, so it is always a good idea to look what is new added in that file and compare
+                what you have in your current child theme. Of course, if you are using a child theme.</li>
+
+                <li><strong>Q: How to translate the theme on my language?</strong> <br>A: The theme translation files are located in 'languages' folder. Make a copy
+                of en_GB.po, rename it to your lang tags, make a translation and save in to 'languages' folder. Also, you have to generate .mo file with the same name
+                as your .po file. Save this file in to 'languages' folder too. You are done!</li>
+
+                <li><strong>Q: Is this theme retina ready?</strong> <br>A: In general, yes! This theme uses icons of fontawesome font and they look nice on screens
+                with any resolutions and/or pixels density. If it comes about thumbnails then you can use this plugin
+                <a href="https://wordpress.org/plugins/wp-retina-2x/">https://wordpress.org/plugins/wp-retina-2x/</a>. Activate it, choose best suitable option for you,
+                regenerate thumbnails (needed only at the first time!) and you are done! And remember to use only big and high quality images on your website!</li>
+
+                <li><strong>Q: Can I auto update this theme from WP admin?</strong> <br>A: Yes, you can. All you need to do is to install special plugin
+                "Envato WordPress Toolkit". Here is <a href="http://www.wpexplorer.com/envato-wordpress-toolkit-guide/">a detailed instruction</a> how to achieve
+                that.</li>
+
+            </ul>
+
+        </section>
+
+	</div>
+</body>
+</html>
